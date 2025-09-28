@@ -1,7 +1,7 @@
 function DiaryEntryCard({ entry, onClick }) {
   return (
     <div onClick={onClick} className="hover:shadow-md transition">
-      <figure className="hover-gallery max-w-60">
+      <figure>
         <img src={entry.image} alt={entry.title} />
       </figure>
       <div>
