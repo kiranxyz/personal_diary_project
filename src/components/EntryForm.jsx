@@ -18,6 +18,7 @@ function EntryForm({ cancel, save, entries }) {
       setError(
         "There is already and entry for this date please enter some other date."
       );
+      return;
     }
     save({ title, date, image, content });
     setTitle("");
