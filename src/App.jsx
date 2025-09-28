@@ -6,14 +6,14 @@ import ViewEntryModal from "./components/ViewEntryModal";
 import Footer from "./components/Footer";
 
 const App = () => {
-  const [entries, setEntries] = useState([]);
-  useEffect(() => {
-    const saved = JSON.parse(localStorage.getItem("entries")) || [];
-    setEntries(saved);
-  }, []);
+  const [entries, setEntries] = useState(() => {
+    const saved = localStorage.getItem("entries");
+    return saved ? JSON.parse(saved) : [];
+  });
   useEffect(() => {
     localStorage.setItem("entries", JSON.stringify(entries));
   }, [entries]);
+
   const [selectedEntry, setSelectedEntry] = useState(null);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [isViewModalOpen, setIsViewModalOpen] = useState(false);
@@ -31,7 +31,7 @@ const App = () => {
       <AddEntryModal
         isOpen={isAddModalOpen}
         onClose={() => setIsAddModalOpen(false)}
-        onSave={(entry) => setEntries([entry, ...entries])}
+        onSave={(entry) => setEntries((prev) => [entry, ...prev])}
         entries={entries}
       />
       <ViewEntryModal
