@@ -57,7 +57,7 @@ function EntryForm({ cancel, save, entries }) {
         <label>Image URL</label>
         <input
           type="text"
-          className="input input-bordered input-accent w-full"
+          className="input input-bordered input-accent w-full  rounded-2xl"
           placeholder="Enter image URL"
           value={image}
           onChange={(e) => setImage(e.target.value)}
