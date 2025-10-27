@@ -1,16 +1,22 @@
-# WBS CODING SCHOOL React Template
+# Personal Diary & Event Apps (React + Vite)
 
-## React <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo" width="30" height="30" /> + TailwindCSS <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind Logo" width="30" height="30" /> + DaisyUI <img src="https://raw.githubusercontent.com/saadeghi/daisyui-images/master/images/daisyui-logo/favicon-192.png" alt="DaisyUI Logo"  width="30" height="30" /> built with Vite <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg" alt="Vite Logo" width="30" height="30" />
+Full-stack applications for diary and event management, built with **React**, **Vite**, and **modern front-end practices**.  
 
-![image](https://github.com/user-attachments/assets/e364c75d-d6b2-4cbd-aa7a-870f7674e528)
+## Features
+- **CRUD functionality** for diary entries and events.  
+- **Authentication flow** with form validation.  
+- **Dynamic state management** using React hooks.  
+- **Deployment** on Render for live access.  
 
-This is a template with **React 19**, **TailwindCSS 4**, and **DaisyUI 5**, provided by **[WBS CODING SCHOOL](https://www.wbscodingschool.com/)**.
+## QA & Testing Contributions
+- Verified **UI fidelity** across devices and browsers.  
+- Conducted **manual QA checks** on auth, forms, and CRUD operations.  
+- Ensured **reliable data persistence** and functional component behavior.  
 
-## Clone into directory
-
-```sh
-git clone git@github.com:WebDev-WBSCodingSchool/wbs-react-template.git <directory>
-```
+## Tech Stack
+- **React**, **Vite**, **JavaScript/TypeScript**  
+- **Deployment:** Render  
+- **Tools:** Git, GitHub, Chrome DevTools
 
 ## Install
 
